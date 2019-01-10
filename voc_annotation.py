@@ -7,7 +7,7 @@ classes = ["basketball","arm","hand", "hoop", "head"]
 
 
 def convert_annotation(year, image_id, list_file):
-    in_file = open('VOCdevkit/VOC%s/Annotations/%s.xml'%(year, image_id))
+    in_file = open('VOCdevkit/VOC%s/Annotations/%s.xml'%(year, image_id), 'r', encoding='UTF-8'))
     tree=ET.parse(in_file)
     root = tree.getroot()
 
